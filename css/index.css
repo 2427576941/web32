@@ -1,0 +1,381 @@
+@font-face {
+    font-family: 'iconfont';  /* project id 1774331 */
+    src: url('https://at.alicdn.com/t/font_1774331_zi8iie0kph.eot');
+    src: url('https://at.alicdn.com/t/font_1774331_zi8iie0kph.eot?#iefix') format('embedded-opentype'),
+    url('https://at.alicdn.com/t/font_1774331_zi8iie0kph.woff2') format('woff2'),
+    url('https://at.alicdn.com/t/font_1774331_zi8iie0kph.woff') format('woff'),
+    url('https://at.alicdn.com/t/font_1774331_zi8iie0kph.ttf') format('truetype'),
+    url('https://at.alicdn.com/t/font_1774331_zi8iie0kph.svg#iconfont') format('svg');
+  }
+/* 去边距格式 */
+blockquote,
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0
+}
+body {
+        font: 16px/28px 'Microsoft YaHei';
+    }
+
+/* css3盒子模型 盒子大小不受边框和内边距影响 */
+* {
+    box-sizing: border-box;
+}
+/* 取消边框和输入框轮廓线 */
+button,
+input,
+textarea {
+    border: 0;
+    outline: none;
+}
+/* 去文本域拖拽 */
+textarea {
+    resize: none;
+}
+/* 去li圆点 */
+li {
+    list-style: none;
+}
+/* img对齐*/
+img {
+    vertical-align: middle;
+}
+/* 去a标签下划线 */
+a {
+    text-decoration: none;
+}
+/* 图片文字中线对齐 */
+img {
+    vertical-align: middle;
+}
+/* 清除浮动 */
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+/* 去格式 */
+
+/* 版芯 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 头部导航 */
+.topnav {
+    height: 56px;
+    line-height: 56px;
+}
+.fl {
+    float: left;
+}
+.fl ul li {
+    float: left;
+    margin: 0 0 0 10px;
+}
+.fl ul li p {
+    font-size: 13px;
+    color: #ccc;
+}
+.fr {
+    float: right;
+}
+.fr ul li {
+    float: left;
+    margin-left: 25px;
+}
+.fr ul li a {
+    font-size: 14px;
+    color: #333333;
+}
+.fr ul li a:hover {
+    color: #0af;
+}
+
+
+.focus {
+    position: relative;
+    /* width: 100; */
+    height: 346px;
+    /* margin: 0 auto; */
+}
+.focus img {
+    /* width: 1440px; */
+    width: 100%;
+    height: 346px;
+    border-radius: 10px;
+}
+.focus:hover a {
+    display: block;
+}
+.focus a {
+    display: none;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: rgba(0, 0, 0, .7);
+    font-size: 30px;
+    color: #fff;
+    border-radius: 50%;
+}
+.focus a:hover {
+    color: red;
+}
+.focus .l,
+.focus .r {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+}
+.focus .l {
+    left: 50px;
+}
+.focus .r {
+    right: 50px;
+}
+.l::after {
+    font-family: 'iconfont';
+    content: "\e63b";
+    margin-left: 8px;
+}
+.r::after {
+    font-family: 'iconfont';
+    content: "\e638";
+    margin-left: 12px;
+}
+.search {
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+    margin-left: -400px;
+    width: 800px;
+    height: 55px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #333333;
+}
+.search ul li {
+    float: left;
+    margin: 10px;
+    line-height: 35px;
+    font-size: 14px;
+    color: #4e4e4e;
+}
+.search ul li:nth-child(1) {
+    width: 215px;
+    border-right: 1px solid #cccccc;
+}
+.search ul li:nth-child(1)::before {
+    font-family: 'iconfont';
+    content: "\e8c4";
+    font-size: 20px;
+}
+.search ul li p::before {
+    font-family: 'iconfont';
+    content: "\e607";
+    font-size: 20px;
+}
+.search ul li:nth-child(3) {
+    position: relative;
+    float: right;
+}
+.search ul li button {
+    position: absolute;
+    top: -8px;
+    right: -6px;
+    border: none;
+    cursor: pointer;
+    width: 144px;
+    height: 47px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #ffde4f;
+}
+
+
+
+.subject {
+    margin-top: 30px;
+}
+.city {
+    text-align: center;
+}
+.city p {
+    margin: 20px;
+}
+.city ul {
+    margin-left: 350px;
+}
+.city ul li {
+    float: left;
+    border-right: 1px solid #dbdbdb;
+}
+.city ul li:nth-child(6) {
+    border: none;
+}
+.city ul li a {
+    margin: 0 25px;
+    color: #333;
+    font-size: 16px;
+}
+.city ul li a:hover {
+    font-weight: 700;
+    border-bottom: 1px solid #fecd11;
+}
+
+.img {
+    margin-top: 20px;
+}
+.img h3 {
+    text-align: center;
+}
+.img ul li {
+    float: left;
+    margin: 25px 25px 25px 0;
+    width: 375px;
+    height: 340px;
+    border-radius: 10px;
+}
+.img ul li:hover {
+   /* 盒子阴影 水平0 垂直15px  模糊程度30px  颜色透明 */
+   box-shadow: 0 15px 30px rgba(0, 0, 0, .3)
+}
+.img ul li img {
+    width: 375px;
+    height: 250px;
+    border-radius: 10px 10px 0 0;
+}
+.img ul li h4 {
+    margin-top: 10px;
+    color: #4e4e4e;
+}
+.img ul li p {
+    color: #999999;
+}
+.img ul li span {
+    font-size: 20px;
+    color: #ea604d;
+    font-weight: 700;
+}
+.more {
+    width: 160px;
+    height: 40px;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    background-color: #ffd10f;
+
+}
+
+
+.service {
+    margin: 50px 0;
+    height: 180px;
+    background-color: #fafafa;
+}
+.service ul li {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 180px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.service ul li a {
+    position: absolute;
+    top: 50%;
+    margin-top: -65px;
+    left: 50%;
+    margin-left: -65px;
+}
+
+.service ul li h4 {
+    margin-top: 10px;
+    color: #333;
+}
+.service ul li span {
+    font-size: 15px;
+    color: #999;
+}
+
+.footer {
+    margin-top: 50px;
+    height: 260px;
+    background-color: #f2f2f2;
+}
+.guild ul {
+    float: left;
+    width: 240px;
+    height: 187px;
+    border-bottom: ridge 1px #d8d8d8;
+}
+.guild ul li h4 {
+    margin: 30px 0 10px 0; 
+}
+.guild ul li a {
+    font-size: 12px;
+    color: #999999;
+}
+.guild ul li a:hover {
+    text-decoration: underline;
+}
+.guild ul:last-child li {
+    position: relative;
+    float: right;
+    margin-top: 35px;
+}
+.guild_1 {
+    position: absolute;
+    bottom: -96px;
+    right: -100px;
+}
+.copyright {
+    margin: 20px 0;
+    color: #999999;
+}
+.copyright img {
+    display: inline-block;
+    margin-bottom: 4px;
+    width: 20px;
+    height: 20px;
+    color: #999999;
+}
+
+
+
+
+
+
+
